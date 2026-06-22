@@ -1,0 +1,34 @@
+=== PERFORMANCE ===
+- Period:               2021-02-02 -> 2024-11-01
+- NAV:                  100.81 -> 54.97
+- Total return:         -45.47%
+- Annualized return:    -14.47%
+- Annualized vol:       27.71%
+- Sharpe (rf=0):        -0.42
+- Max drawdown:         -61.73%
+
+=== DIVERSIFICATION SNAPSHOT (avg weights) ===
+- Funds held:                 24
+- Effective number of holdings (1/HHI): 23.5
+- Effective Number of Bets (ENB):       1.01
+- Diversification Ratio:                1.08
+- DR^2 (approx independent factors):    1.17
+  -> Many funds by weight, far fewer independent bets = diworsification.
+
+=== MARGINAL BENEFIT (Evans-Archer curve) ===
+- Vol at 1 fund:   25.69%
+- Vol at 24 funds: 27.89%
+- Beyond ~3 funds each new fund cuts vol by < 0.10pp.
+- ENB saturates at 1.00 despite 24 funds.
+
+=== CORRELATION BY VOLATILITY REGIME ===
+        n_days  avg_corr    enb  mean_vol
+regime                                   
+calm       317     0.509  1.017     0.007
+normal     325     0.633  1.007     0.008
+stress     317     0.921  1.001     0.022
+- Calm avg corr:   0.509
+- Stress avg corr: 0.921
+- Correlation uplift in stress: +0.412
+- ENB collapse calm->stress: 1.02 -> 1.00
+  -> Diversification is weakest exactly when it is needed most.
